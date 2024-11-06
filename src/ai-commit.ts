@@ -1,9 +1,6 @@
-import { config } from 'dotenv';
 import { execSync } from 'child_process';
 import { OpenAI } from 'openai';
-
-// Load environment variables from .env file
-config();
+import config from './config/config';
 
 const apiKey = process.env.OPENAI_API_KEY;
 if (!apiKey) {
@@ -37,7 +34,7 @@ async function generateCommitMessage(diffText: string): Promise<string> {
         messages: [
           {
             role: 'system',
-            content: `You are a helpful assistant that generates concise and descriptive git commit messages based on the changes provided. You should follow the conventional commits format (https://www.conventionalcommits.org/en/v1.0.0/). The commit message should be in English and not exceed 50 characters.`,
+            content: `You are a helpful assistant that generates concise and descriptive git commit messages based on the changes provided. You should follow the conventional commits format (https://www.conventionalcommits.org/en/v1.0.0/). The commit message should be in English and not exceed ${config.} characters.`,
           },
           {
             role: 'user',
