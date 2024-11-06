@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
 import debug from 'debug';
-import { Config } from '../types/config';
+import { Config } from '@src/types/config';
 
 const log = debug('app:config');
 const trace = debug('trace:config');
