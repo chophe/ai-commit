@@ -1,0 +1,10 @@
+{
+  "openAI": {
+    "apiKey": "[env]:OPENAI_API_KEY",
+    "baseUrl": "[env]:OPENAI_BASE_URL"
+  },
+  "commit": {
+    "language": "[env]:COMMIT_LANGUAGE",
+    "maxCharacter": 50
+  }
+}
