@@ -94,3 +94,15 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This README provides a clear overview of the project, its features, setup instructions, and usage guidelines while maintaining a professional and engaging tone. It's structured to help users quickly understand and start using the AI-Commit tool.
 
+## Commit Message Standards 📝
+
+AI-Commit supports multiple commit message formats:
+- Conventional Commits
+- Gitmoji
+- Semantic Commit Messages
+- Custom formats through configuration
+
+📚 **Documentation**:
+- [Commit Standards Guide](docs/commit-standards.md) - Learn about different commit message standards and best practices
+- [Commit Prompts Guide](docs/commit-prompts.md) - Explore various prompt templates for generating commit messages
+
