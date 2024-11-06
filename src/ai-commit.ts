@@ -34,7 +34,7 @@ async function generateCommitMessage(diffText: string): Promise<string> {
         messages: [
           {
             role: 'system',
-            content: `You are a helpful assistant that generates concise and descriptive git commit messages based on the changes provided. You should follow the conventional commits format (https://www.conventionalcommits.org/en/v1.0.0/). The commit message should be in English and not exceed ${config.} characters.`,
+            content: `You are a helpful assistant that generates concise and descriptive git commit messages based on the changes provided. You should follow the conventional commits format (https://www.conventionalcommits.org/en/v1.0.0/). The commit message should be in ${config.commit.language} and not exceed ${config.commit.maxCharacter} characters.`,
           },
           {
             role: 'user',
