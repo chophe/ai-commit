@@ -6,5 +6,28 @@
   "commit": {
     "language": "[env]:COMMIT_LANGUAGE",
     "maxCharacter": 50
+  },
+  "styles": {
+    "conventional": {
+      "prompt": "Based on the following code changes, generate a Conventional Commit message. Use the appropriate type (e.g., feat, fix, docs, style, refactor, test, chore). Include an optional scope that describes the part of the project affected (like auth, ui, or api). Make the description concise and clear. Diff: {diff}"
+    },
+    "gitmoji": {
+      "prompt": "Generate a Gitmoji-style commit message based on the following code changes. Start the message with an appropriate emoji (e.g., 🐛 for fix, ✨ for feature, 📝 for documentation). Follow with a short description of the change, specifying the affected area if possible. Diff: {diff}"
+    },
+    "semantic": {
+      "prompt": "Generate a semantic commit message based on the following code changes. Use a suitable prefix like fix, feature, docs, etc., and provide a clear, one-sentence summary of the change. You can include the affected module or functionality in parentheses if it makes sense. Diff: {diff}"
+    },
+    "commitizen": {
+      "prompt": "Create a Commitizen-style commit message based on these code changes. Use the following format: Type: Use types like feat, fix, chore, refactor, etc.     Scope: Describe the specific area impacted by the change (e.g., api, ui, backend). Description: Provide a brief, clear description of what has been changed and why. Diff: {diff}"
+    },
+    "naturalLanguage": {
+      "prompt": "Based on these code changes, generate a clear, one-sentence commit message that summarizes the changes. Use simple, natural language and avoid technical jargon if possible. Diff: {diff}"
+    },
+    "emojiPlusConventional": {
+      "prompt": "Create a Conventional Commit-style message with emojis based on the following code changes. Start with an emoji that represents the type of change (e.g., ✨ for new features, 🐛 for bug fixes). Follow the <type>(<scope>): <description> format. Diff: {diff}"
+    },
+    "githubChangelog": {
+      "prompt": "Generate a detailed commit message suitable for a GitHub changelog based on these changes. Start with a clear title (e.g., Feature:, Fix:), followed by a more descriptive sentence about the change. Mention specific files or functions affected if relevant, and explain why the change was made. Diff: {diff}"
+    }
   }
 }
