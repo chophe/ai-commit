@@ -20,5 +20,8 @@
     "debug": "^4.3.7",
     "dotenv": "^16.4.5",
     "openai": "^4.71.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12"
   }
 }
